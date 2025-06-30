@@ -1,67 +1,7 @@
 {
-  "name": "@alleyway/add-tradingview-alerts-tool",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:alleyway/add-tradingview-alerts-tool.git"
-  },
-  "bugs": {
-    "url": "https://github.com/alleyway/add-tradingview-alerts-tool/issues"
-  },
-  "description": "Add TradingView Alerts in bulk",
-  "type": "module",
-  "main": "./dist/index.js",
-  "bin": {
-    "atat": "./dist/cli.js"
-  },
-  "files": [
-    "src",
-    "dist",
-    "tsconfig.json",
-    "!**/*.test.**"
-  ],
-  "scripts": {
-    "build": "npx tsc",
-    "atat": "node --no-warnings ./dist/cli.js",
-    "prepublishOnly": "npm run build",
-    "release": "echo 'MAKE SURE YOU RUN ./deploy_master.sh first! and DO NOT PUBLISH FROM HERE!' && npx release-it",
-    "release-beta": "echo 'MAKE SURE to TAG your beta for github actions to deploy npm package!!' && npx release-it --preRelease=beta --config .release-it.beta-nopublish.json",
-    "prepare": "husky",
-    "test": "rm -Rf ./user_data && node --experimental-vm-modules --trace-warnings node_modules/.bin/vitest run",
-    "test:ci": "rm -Rf ./user_data && node --experimental-vm-modules --trace-warnings node_modules/.bin/vitest run --coverage.enabled",
-    "test:watch": "node_modules/.bin/vitest --watch"
-  },
-  "keywords": [
-    "tradingview",
-    "alerts",
-    "3commas",
-    "indicator"
-  ],
-  "author": "Michael Lake",
-  "license": "MIT",
-  "version": "4.0.1",
+  "name": "tradingview-alerts-home",
+  "version": "1.0.0",
   "dependencies": {
-    "commander": "^12.1.0",
-    "consola": "^3.2.3",
-    "dotenv": "^16.4.5",
-    "extensionless": "^1.9.9",
-    "fast-csv": "^5.0.2",
-    "kleur": "^4.1.5",
-    "lodash.get": "^4.4.2",
-    "pacote": "^20.0.0",
-    "puppeteer": "^23.9.0",
-    "regex-parser": "^2.3.0",
-    "semver": "^7.6.3",
-    "yaml": "^2.6.1"
-  },
-  "devDependencies": {
-    "@release-it/bumper": "^7.0.5",
-    "@types/node": "^22.9.3",
-    "@vitest/coverage-v8": "^2.1.5",
-    "@vitest/ui": "^2.1.5",
-    "husky": "^9.1.7",
-    "release-it": "^19.0.2",
-    "typescript": "^5.7.2",
-    "vitest": "^2.1.5"
-  },
-  "private": false
+    "@alleyway/add-tradingview-alerts-tool": "latest"
+  }
 }

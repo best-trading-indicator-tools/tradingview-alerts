@@ -3,9 +3,12 @@
     node --version
 
 
-2) Run the global installation command which will ask to install to a subdirectory called "tradingview-alerts-home"
+2) Clone and run the installation which will ask to install to a subdirectory called "tradingview-alerts-home"
 
-    npx @alleyway/create-tradingview-alerts-home@latest
+    git clone https://github.com/best-trading-indicator-tools/tradingview-alerts.git
+    cd tradingview-alerts/create-tradingview-alerts-home
+    npm install && npm run build
+    node dist/index.js
 
 
 

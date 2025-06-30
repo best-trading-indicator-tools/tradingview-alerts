@@ -54,7 +54,10 @@ __Create your tradingview-alerts-home directory and/or upgrade version__
 __(it will prompt to create a subdirectory and install ATAT)__
 
 ```shell
-npx @alleyway/create-tradingview-alerts-home@latest
+git clone https://github.com/best-trading-indicator-tools/tradingview-alerts.git
+cd tradingview-alerts/create-tradingview-alerts-home
+npm install && npm run build
+node dist/index.js
 ```
 
     
@@ -243,7 +246,10 @@ alert:
 * "atat" command not found? From your tradingview-alerts-home directory run the following:
 
 
-    npx @alleyway/create-tradingview-alerts-home@latest
+    git clone https://github.com/best-trading-indicator-tools/tradingview-alerts.git
+    cd tradingview-alerts/create-tradingview-alerts-home
+    npm install && npm run build
+    node dist/index.js
 
 * Any other hiccups? [File an issue](https://github.com/alleyway/add-tradingview-alerts-tool/issues/new)
 

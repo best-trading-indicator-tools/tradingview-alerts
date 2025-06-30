@@ -5,7 +5,10 @@ If you forgot why you have this directory and how run commands...
 
 2) You can reinstall/update this project by running the following:
 
-   npx @alleyway/create-tradingview-alerts-home@latest
+   git clone https://github.com/best-trading-indicator-tools/tradingview-alerts.git
+   cd tradingview-alerts/create-tradingview-alerts-home
+   npm install && npm run build
+   node dist/index.js
 
 3) Read more at https://github.com/alleyway/add-tradingview-alerts-tool
 
